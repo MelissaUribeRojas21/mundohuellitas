@@ -1,10 +1,21 @@
+body {
+    background-image: url("../assets/background1.jpg");
+    background-size: cover;
+}
+
+.card_container1 {
+    display: flex;
+    justify-content: center;
+}
+
+.card_container2 {
+
+    width: 80%;
+}
+
 .card {
-    --bg-card: #92E1E4;
-    --primary: #EC1F43;
-    --primary-800:#FFAA5B;
-    --primary-shadow:#FFAA5B;
-    --light: white;
-    --zinc-800:#FFAA5B;
+    --bg-card: #ebe2d9;
+    --primary: #93DFE2;
     --bg-linear: linear-gradient(0deg, var(--primary) 50%, var(--light) 125%);
 
     position: relative;
@@ -18,6 +29,8 @@
     background-color: var(--bg-card);
 
     border-radius: 1rem;
+    color: #432E2E;
+    font-weight: 100;
 }
 
 .image_container {
@@ -28,12 +41,13 @@
     z-index: 5;
 
     width: 100%;
-    height: 19rem;
-/*     background-color: var(--primary-800);
+    height: 13.5rem;
+    /*     background-color: var(--primary-800);
     border-radius: 0.5rem;
     background-size: contain;  */
-    background-image: url("https://cdn.shopify.com/s/files/1/2259/2695/products/IMG20180220145712_530x@2x.jpg?v=1571609384");
-    background-size: cover; 
+    background-image: url("https://laikapp.s3.amazonaws.com/dev_images_products/0b3999f5b8342aa6b94d953201542e2f_1715725578.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
 
@@ -49,15 +63,13 @@
 
 .title {
     overflow: clip;
-
     width: 100%;
-
     font-size: 1rem;
     font-weight: 600;
-    color: var(--light);
     text-transform: capitalize;
     text-wrap: nowrap;
     text-overflow: ellipsis;
+    text-align: center;
 }
 
 
@@ -75,26 +87,50 @@
 
 .cart-button {
     cursor: pointer;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
-
     padding: 0.5rem;
     width: 100%;
     background-image: var(--bg-linear);
-
     font-size: 0.75rem;
     font-weight: 500;
-    color: var(--light);
+    color: #054b4e;
+    font-weight: bold;
     text-wrap: nowrap;
-
-    border: 2px solid  #ff5b5b;
-    border-radius: 0.5rem;
-    box-shadow: inset 0 0 0.25rem 1px var(--light);
+    border: 2px solid #93DFE2;
+    border-radius: 1rem;
+    background-color: #93DFE2;
 }
 
 .cart-button .cart-icon {
     width: 1rem;
+}
+
+.cart-button:hover{
+    background-color: #448c8f;
+    border: 2px solid #448c8f;
+    color: white;
+}
+
+.promo_title {
+    background-color: #EA314D;
+    /* background-color: lightcoral; */
+    width: 80%;
+
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo_container {
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
